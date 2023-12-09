@@ -1,30 +1,65 @@
-appraise 'activesupport-3.2' do
-  gem 'activesupport', '~> 3.2.22'
-  gem 'minitest', '~> 5'
-end
-
-appraise 'activesupport-4.0' do
-  gem 'activesupport', '~> 4.0.13'
-end
-
-appraise 'activesupport-4.1' do
-  gem 'activesupport', '~> 4.1.14'
-end
-
-appraise 'activesupport-4.2' do
-  gem 'activesupport', '~> 4.2.5.1'
-end
-
-appraise 'activesupport-5.0' do
-  gem 'activesupport', '~> 5.0.0'
-end
-
-appraise 'faraday-1.x' do
+appraise 'activesupport-6.0-faraday-1.x' do
+  gem 'activesupport', '~> 6.0.0'
+  gem 'activemodel', '~> 6.0.0'
   gem 'faraday', '~> 1.10'
   gem 'faraday-gzip', '~> 1.0'
 end
 
-appraise 'faraday-2.x' do
+appraise 'activesupport-6.1-faraday-1.x' do
+  gem 'activesupport', '~> 6.1.0'
+  gem 'activemodel', '~> 6.1.0'
+  gem 'faraday', '~> 1.10'
+  gem 'faraday-gzip', '~> 1.0'
+end
+
+appraise 'activesupport-7.0-faraday-1.x' do
+  gem 'activesupport', '~> 7.0.0'
+  gem 'activemodel', '~> 7.0.0'
+  gem 'faraday', '~> 1.10'
+  gem 'faraday-gzip', '~> 1.0'
+end
+
+appraise 'activesupport-7.1-faraday-1.x' do
+  gem 'activesupport', '~> 7.1.0'
+  gem 'activemodel', '~> 7.1.0'
+  gem 'faraday', '~> 1.10'
+  gem 'faraday-gzip', '~> 1.0'
+end
+
+appraise 'activesupport-6.0-faraday-2.x' do
+  gem 'activesupport', '~> 6.0.0'
+  gem 'activemodel', '~> 6.0.0'
   gem 'faraday', '~> 2.0'
   gem 'faraday-gzip', '~> 2.0'
+end
+
+appraise 'activesupport-6.1-faraday-2.x' do
+  gem 'activesupport', '~> 6.1.0'
+  gem 'activemodel', '~> 6.1.0'
+  gem 'faraday', '~> 2.0'
+  gem 'faraday-gzip', '~> 2.0'
+end
+
+appraise 'activesupport-7.0-faraday-2.x' do
+  gem 'activesupport', '~> 7.0.0'
+  gem 'activemodel', '~> 7.0.0'
+  gem 'faraday', '~> 2.0'
+  gem 'faraday-gzip', '~> 2.0'
+end
+
+appraise 'activesupport-7.1-faraday-2.x' do
+  gem 'activesupport', '~> 7.1.0'
+  gem 'activemodel', '~> 7.1.0'
+  gem 'faraday', '~> 2.0'
+  gem 'faraday-gzip', '~> 2.0'
+end
+
+appraise 'faraday-1.x' do
+  gem 'faraday', '~> 1.10' #     depends on Ruby (>= 2.4)
+  gem 'faraday-gzip', '~> 1.0' # depends on Ruby (< 4, >= 2.6)
+end
+
+appraise 'faraday-2.x' do
+  gem 'faraday', '~> 2.0' #      depends on Ruby (>= 2.6)
+  gem 'faraday-gzip', '~> 2.0' # depends on Ruby (< 4, >= 2.6)
 end
